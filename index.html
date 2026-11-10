@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Pulso Gym: gimnasio en Bogotá con clases, planes flexibles e inscripción en línea.">
+  <title>Pulso Gym | Entrena a tu ritmo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#inicio" class="logo">PULSO<span style="color:#111827">GYM</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menuPrincipal"><span></span><span></span><span></span></button>
+      <nav class="main-nav" id="menuPrincipal" aria-label="Navegación principal">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
+          <li><a href="#clases">Clases</a></li>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#imc">Calculadora IMC</a></li>
+          <li><a href="#inscripcion" class="btn btn-small">Inscríbete</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Gimnasio en Bogotá</p>
+          <h1>Entrena a tu ritmo, sin complicaciones</h1>
+          <p class="hero-sub">Consulta horarios, compara planes, calcula tu IMC e inscríbete en línea en pocos minutos. Tu primera clase es gratis.</p>
+          <div class="hero-actions">
+            <a href="#planes" class="btn">Ver planes</a>
+            <a href="#clases" class="btn btn-outline">Ver clases</a>
+          </div>
+        </div>
+        <figure class="hero-img"><img src="img/hero.svg" alt="Ilustración de una mancuerna y una pesa rusa" width="520" height="420"></figure>
+      </div>
+    </section>
+
+    <section class="section" id="beneficios">
+      <div class="container">
+        <h2 class="section-title">¿Por qué Pulso Gym?</h2>
+        <p class="section-lead">Todo lo que necesitas para empezar y mantener tu rutina.</p>
+        <div class="cards cards-4">
+          <article class="card benefit"><span class="ico" aria-hidden="true">🏋️</span><h3>Entrenadores certificados</h3><p>Acompañamiento personalizado en cada sesión.</p></article>
+          <article class="card benefit"><span class="ico" aria-hidden="true">⏰</span><h3>Horario extendido</h3><p>Abierto de 5:00 a.m. a 10:00 p.m. todos los días.</p></article>
+          <article class="card benefit"><span class="ico" aria-hidden="true">📱</span><h3>Trámites en línea</h3><p>Inscripción y consulta de planes desde tu celular.</p></article>
+          <article class="card benefit"><span class="ico" aria-hidden="true">🎁</span><h3>Primera clase gratis</h3><p>Pruébanos sin compromiso antes de elegir tu plan.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="clases">
+      <div class="container">
+        <h2 class="section-title">Clases y horarios</h2>
+        <p class="section-lead">Filtra por tipo de clase.</p>
+        <div class="filters" role="group" aria-label="Filtrar clases">
+          <button class="chip active" data-filter="todas">Todas</button>
+          <button class="chip" data-filter="fuerza">Fuerza</button>
+          <button class="chip" data-filter="cardio">Cardio</button>
+          <button class="chip" data-filter="yoga">Yoga</button>
+        </div>
+        <div class="cards" id="listaClases">
+          <article class="card" data-cat="fuerza"><img src="img/fuerza.svg" alt="Clase de fuerza" width="400" height="240" loading="lazy"><div class="card-body"><h3>Fuerza funcional</h3><p class="time">Lun, Mié y Vie · 6:00 a.m.</p><p>Trabajo con pesas y peso corporal.</p><span class="tag">Intermedio</span></div></article>
+          <article class="card" data-cat="cardio"><img src="img/cardio.svg" alt="Clase de cardio" width="400" height="240" loading="lazy"><div class="card-body"><h3>Cardio intenso</h3><p class="time">Mar y Jue · 6:30 p.m.</p><p>Intervalos para quemar calorías.</p><span class="tag">Avanzado</span></div></article>
+          <article class="card" data-cat="yoga"><img src="img/yoga.svg" alt="Clase de yoga" width="400" height="240" loading="lazy"><div class="card-body"><h3>Yoga y movilidad</h3><p class="time">Sáb · 9:00 a.m.</p><p>Flexibilidad, respiración y relajación.</p><span class="tag">Todos los niveles</span></div></article>
+          <article class="card" data-cat="cardio"><img src="img/cardio.svg" alt="Clase de spinning" width="400" height="240" loading="lazy"><div class="card-body"><h3>Spinning</h3><p class="time">Lun a Vie · 7:00 p.m.</p><p>Ciclismo indoor con música.</p><span class="tag">Intermedio</span></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="planes">
+      <div class="container">
+        <h2 class="section-title">Planes de membresía</h2>
+        <p class="section-lead">Precios mensuales en pesos colombianos.</p>
+        <div class="switch" role="group" aria-label="Periodo de pago">
+          <button class="chip active" data-periodo="mensual">Mensual</button>
+          <button class="chip" data-periodo="trimestral">Trimestral (-10%)</button>
+        </div>
+        <div class="cards">
+          <article class="card plan"><h3>Básico</h3><p class="price" data-mensual="89000">$89.000<small>/mes</small></p><ul><li>Acceso a sala de máquinas</li><li>Horario de 5:00 a.m. a 4:00 p.m.</li></ul><a href="#inscripcion" class="btn btn-outline" data-plan="Básico">Elegir</a></article>
+          <article class="card plan featured"><span class="badge">Más popular</span><h3>Plus</h3><p class="price" data-mensual="129000">$129.000<small>/mes</small></p><ul><li>Sala de máquinas y clases grupales</li><li>Horario completo</li></ul><a href="#inscripcion" class="btn" data-plan="Plus">Elegir</a></article>
+          <article class="card plan"><h3>Premium</h3><p class="price" data-mensual="169000">$169.000<small>/mes</small></p><ul><li>Todo lo del plan Plus</li><li>Entrenador personal 2 veces al mes</li></ul><a href="#inscripcion" class="btn btn-outline" data-plan="Premium">Elegir</a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="imc">
+      <div class="container">
+        <h2 class="section-title">Calculadora de IMC</h2>
+        <p class="section-lead">Conoce tu índice de masa corporal y recibe una recomendación de plan.</p>
+        <div class="imc">
+          <form class="form" id="formImc" novalidate>
+            <div class="field"><label for="peso">Peso (kg)</label><input type="number" id="peso" min="20" max="300" step="0.1" placeholder="Ej: 70"><small class="error" aria-live="polite"></small></div>
+            <div class="field"><label for="altura">Estatura (cm)</label><input type="number" id="altura" min="100" max="250" placeholder="Ej: 170"><small class="error" aria-live="polite"></small></div>
+            <button type="submit" class="btn">Calcular</button>
+          </form>
+          <div class="imc-result" id="imcResultado" role="status"><p class="hint">Ingresa tus datos para ver el resultado.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <h2 class="section-title">Preguntas frecuentes</h2>
+        <p class="section-lead">Toca una pregunta para ver la respuesta.</p>
+        <div class="accordion">
+          <article class="acc-item"><button class="acc-btn" aria-expanded="false">¿Necesito experiencia previa? <span class="acc-icon">+</span></button><div class="acc-panel"><p>No. Los entrenadores orientan a quienes inician y adaptan la rutina a cada nivel.</p></div></article>
+          <article class="acc-item"><button class="acc-btn" aria-expanded="false">¿Puedo cambiar de plan? <span class="acc-icon">+</span></button><div class="acc-panel"><p>Sí, puedes cambiar de plan al finalizar cada periodo de pago.</p></div></article>
+          <article class="acc-item"><button class="acc-btn" aria-expanded="false">¿Cómo funciona la primera clase gratis? <span class="acc-icon">+</span></button><div class="acc-panel"><p>Diligencia el formulario de inscripción y el equipo te contactará para agendar tu visita.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="inscripcion">
+      <div class="container contact">
+        <div class="contact-info">
+          <h2>Inscripción</h2>
+          <p>Déjanos tus datos y te contactaremos para agendar tu primera clase gratis.</p>
+          <ul class="contact-list"><li>📍 Cra. 15 # 80-20, Bogotá D.C.</li><li>📞 (601) 555 0123</li><li>✉️ info@pulsogym.example</li></ul>
+        </div>
+        <form class="form" id="formContacto" novalidate>
+          <div class="field"><label for="nombre">Nombre</label><input type="text" id="nombre" placeholder="Tu nombre"><small class="error" aria-live="polite"></small></div>
+          <div class="field"><label for="correo">Correo electrónico</label><input type="email" id="correo" placeholder="tucorreo@ejemplo.com"><small class="error" aria-live="polite"></small></div>
+          <div class="field"><label for="plan">Plan de interés</label><select id="plan"><option value="">Selecciona un plan</option><option>Básico</option><option>Plus</option><option>Premium</option></select><small class="error" aria-live="polite"></small></div>
+          <button type="submit" class="btn">Enviar inscripción</button>
+          <p class="form-ok" id="formOk" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Pulso Gym · Proyecto integrador de Ingeniería Web I · UMB</p>
+      <ul class="footer-links"><li><a href="#inicio">Subir ↑</a></li><li><a href="#planes">Planes</a></li></ul>
+    </div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>
